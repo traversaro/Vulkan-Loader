@@ -354,10 +354,10 @@ else()
             MACOSX_FRAMEWORK_IDENTIFIER com.lunarg.vulkanFramework
             PUBLIC_HEADER "${FRAMEWORK_HEADERS}"
         )
-        install(TARGETS vulkan-framework
-            PUBLIC_HEADER DESTINATION vulkan
-            FRAMEWORK DESTINATION loader
-        )
+        # install(TARGETS vulkan-framework
+        #    PUBLIC_HEADER DESTINATION vulkan
+        #    FRAMEWORK DESTINATION loader
+        # )
 # cmake-format: on
     endif()
 endif()
