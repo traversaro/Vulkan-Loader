@@ -321,7 +321,7 @@ else()
         target_link_libraries(vulkan PRIVATE Threads::Threads)
     endif()
 
-    if(APPLE)
+    if(FALSE)
         find_library(COREFOUNDATION_LIBRARY NAMES CoreFoundation)
         target_link_libraries(vulkan PRIVATE "-framework CoreFoundation")
 
